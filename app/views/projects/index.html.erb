@@ -8,15 +8,17 @@
   </thead>
 
   <tbody>
-  
-  <div class= "card bg-light mb-3" style= "width: 18rem;">
+  <div class="card-columns" align= "left">
+
+    <div class= "card bg-light mb-3" style= "width: 18rem;"  >
     <% @projects.each do |project| %>
         <p class="Card Title" style="width: 18rem;" <td><%= project.title %></td> </p>
         <p class="Card Text"style="width: 18rem;" <td><%= project.description %></td> </p>
         <p class="show"style="width: 18rem;"  <td><%= link_to ' Show ', project %></td>  </p>
         <p class="edit"style="width: 18rem;" <td><%= link_to ' Edit ', edit_project_path(project) %></td> </p>
         <p class="delete"style="width: 18rem;" <td><%= link_to ' Destroy ', project, method: :delete, data: { confirm: 'Are you sure?' } %></td> </p>
-     
+   
+
    
     <% end %>
   </tbody>
