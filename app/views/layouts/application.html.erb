@@ -13,7 +13,7 @@
 
       <body>
        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Project Portfolio</a>
+  <a class="navbar-brand" href=" ">Kristen Project Portfolio</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,7 +21,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/projects/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Projects</a>
@@ -34,6 +34,7 @@
           <a class="dropdown-item" href="/users/sign_in#">Sign In</a>
           <a class="dropdown-item" href="/users/sign_up#">Sign Up</a>
           <div class="dropdown-divider"></div>
+          <a class="dropdown-item"<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></a>
         </div>
       </li>
         </div>
@@ -53,10 +54,10 @@
     <p class="navbar-text float-right">
     <% if user_signed_in? %>
       Logged in as <strong><%= current_user.email %></strong>.
-      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-    <% else %>
-      <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-      <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+    
     <% end %>
+
+    <p class= " ">
+    
 </div>
 </p>
