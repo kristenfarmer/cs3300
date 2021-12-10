@@ -8,6 +8,7 @@
   </thead>
 
   <tbody>
+  
   <div class= "card bg-light mb-3" style= "width: 18rem;">
     <% @projects.each do |project| %>
         <p class="Card Title" style="width: 18rem;" <td><%= project.title %></td> </p>
@@ -24,4 +25,5 @@
 <br>
 
 <button type="button" class="btn btn-light"> <%= link_to 'New Project', new_project_path %> </button>
+
 
