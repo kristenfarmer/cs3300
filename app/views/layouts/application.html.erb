@@ -3,15 +3,19 @@
 
   <html>
       <head>
+      <div style="background-image: url('Background/IMG_9228.JPG');"
+     
+
         <title>Cs3300</title>
         <%= csrf_meta_tags %>
         <%= csp_meta_tag %>
 
+
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
       </head>
-
       <body>
+ 
        <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href=" ">Kristen Project Portfolio</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,14 +50,15 @@
     </form>
   </div>
 </nav>
+<div class="jumbotron">
+<h1 class="display-4">Hello, I am Kristen!</h1>
+<p class="lead">This page is a collection of all my projects I have created! </p>
+<hr class="my-4">
+
+</div>
 
         <%= yield %>
-        <div class="jumbotron">
-  <h1 class="display-4">Hello, I am Kristen!</h1>
-  <p class="lead">This page is a collection of all my projects I have created! </p>
-  <hr class="my-4">
-  <p class="lead">
-    <a class="btn btn-light btn-lg" href="/projects/" role="button">Learn more</a>
+
   </p>
 </div>
       </body>
